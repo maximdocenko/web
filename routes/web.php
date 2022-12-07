@@ -16,4 +16,4 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/', [App\Http\Controllers\CurrencyController::class, 'index']);
 });
 
-Auth::routes(['register' => false]);
+Auth::routes();
